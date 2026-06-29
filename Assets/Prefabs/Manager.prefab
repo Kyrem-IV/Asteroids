@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5736183122368237051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25378448488671873}
+  - component: {fileID: 752402305251633156}
+  - component: {fileID: 7544614657629533622}
+  - component: {fileID: 8226009676200618177}
+  - component: {fileID: -486823079038654043}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &25378448488671873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736183122368237051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.07738, y: -0.8504054, z: -0.066196114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &752402305251633156
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736183122368237051}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &7544614657629533622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736183122368237051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c268303c8089d479cc237a5518c4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroid: {fileID: 2834636302229959729, guid: fc6f4df593d62b84f9fbcc83ea6352bc, type: 3}
+  manager: {fileID: 5736183122368237051}
+  bigAsteroidVelocity: 0
+  midAsteroidVelocity: 0
+  smallAsteroidVelocity: 0
+  splittingAsteroids: 2
+  bigSize: {x: 0, y: 0, z: 0}
+  mediumSize: {x: 0.5, y: 0.5, z: 0}
+  smallSize: {x: 0.25, y: 0.25, z: 0}
+  delay: 4
+--- !u!114 &8226009676200618177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736183122368237051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63f3f76cb67d10f45bd94dfdcf4bfd6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: {fileID: 5322208895303465569, guid: 5fe4fbb1fefa4c64d9c8dd658b0f8967, type: 3}
+  player: {fileID: 292633204661913896, guid: 1fddde5d0d9d1314c9349875c190b90b, type: 3}
+  loseText: {fileID: 984470801341817883, guid: 5fde1e1a4884fa443b57537902f0b96e, type: 3}
+  canvas: {fileID: 740150605240966042, guid: 72b8ab59180a9ce4f82c2dab1b2ebe49, type: 3}
+  prompt: {fileID: 1888974092103513777, guid: f4c3040f51ff2c741809c379bc2ca415, type: 3}
+  manager: {fileID: 5736183122368237051}
+  startingLives: 3
+  interval: 1
+  originalLifeX: -4.5
+  originalLifeY: 4.1
+  respawnTimer: 1.5
+  invincibility: 1.5
+--- !u!114 &-486823079038654043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736183122368237051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90ae8f0f54b4594d8d2ccc12e564962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bigSaucePoints: 1
+  smallSaucePoints: 2
+  bigAsteroidPoints: 1
+  midAsteroidPoints: 2
+  smallAsteroidPoints: 3
+  levelBonus: 3
+  txt: {fileID: 2250740468547898109, guid: f4c3040f51ff2c741809c379bc2ca415, type: 3}
+  canvas: {fileID: 740150605240966042, guid: 72b8ab59180a9ce4f82c2dab1b2ebe49, type: 3}
+  manager: {fileID: 5736183122368237051}
